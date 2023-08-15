@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>碎碎念</title>
+      <link href="2023/08/15/suisuinian/"/>
+      <url>2023/08/15/suisuinian/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="05de89e0cf3487af862940a739a990ae96e58488fdd0449a90121dcada11ab64">b7fcefc5eae002539b70ccdd18fd8365403d2838b25f55e14458f5e38776ead440a386f0193c97ab96e85fa8bec2ae135fbfbf50b9a070a1ad7786812119825f1c6b55616e26868f0f66c47f63eb28df85d4b41ffb8cb9fd91726aa7fb3a7aea3e5856f95ea21fab74200c64381e1d7d9b813ba529e62e74ec37e4a5ad0b4e8e77d5f8fba1be4719cad26dc5d46b1664</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 这里需要密码.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 碎碎念 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端基础-css篇(二)</title>
+      <link href="2023/08/14/qianduan_2/"/>
+      <url>2023/08/14/qianduan_2/</url>
+      
+        <content type="html"><![CDATA[<p><strong>本文重要内容</strong></p><ul><li>CSS的单位</li><li>字体属性</li><li>文本属性</li><li>定位属性：position、float、overflow等</li></ul><h3 id="CSS的单位"><a href="#CSS的单位" class="headerlink" title="CSS的单位"></a>CSS的单位</h3><p>html中的单位只有一种，那就是像素px，所以单位是可以省略的，但是在CSS中不一样。 <strong>CSS中的单位是必须要写的</strong>，因为它没有默认单位。</p><p><strong>绝对单位</strong></p><p>1 <code>in</code>=2.54<code>cm</code>=25.4<code>mm</code>=72<code>pt</code>=6<code>pc</code>。</p><p>各种单位的含义：</p><ul><li><code>in</code>：英寸Inches (1 英寸 = 2.54 厘米)</li><li><code>cm</code>：厘米Centimeters</li><li><code>mm</code>：毫米Millimeters</li><li><code>pt</code>：点Points，或者叫英镑 (1点 = 1/72英寸)</li><li><code>pc</code>：皮卡Picas (1 皮卡 = 12 点)</li></ul><p><strong>相对单位</strong></p><p><code>px</code>：像素 <code>em</code>：印刷单位相当于12个点 <code>%</code>：百分比，相对周围的文字的大小</p><p>为什么说像素px是一个相对单位呢，这也很好理解。比如说，电脑屏幕的的尺寸是不变的，但是我们可以让其显示不同的分辨率，在不同的分辨率下，单个像素的长度肯定是不一样的啦。</p><p>百分比<code>%</code>这个相对单位要怎么用呢？这里也举个例子：</p><p><img src="http://img.smyhvae.com/2015-10-03-css-17.png" alt="img"></p><h3 id="font-字体属性"><a href="#font-字体属性" class="headerlink" title="font 字体属性"></a>font 字体属性</h3><p>CSS中，有很多<strong>非布局样式</strong>（与布局无关），包括：字体、行高、颜色、大小、背景、边框、滚动、换行、装饰性属性（粗体、斜体、下划线）等。</p><p>这一段，我们先来讲一下字体属性。</p><p>css样式中，常见的字体属性有以下几种：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">50px</span>; <span class="comment">/*字体大小*/</span></span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">30px</span>;      <span class="comment">/*行高*/</span></span><br><span class="line"><span class="attribute">font-family</span>: 幼圆,黑体; <span class="comment">/*字体类型：如果没有幼圆就显示黑体，没有黑体就显示默认*/</span></span><br><span class="line"><span class="attribute">font-style</span>: italic ;<span class="comment">/*italic表示斜体，normal表示不倾斜*/</span></span><br><span class="line"><span class="attribute">font-weight</span>: bold;<span class="comment">/*粗体*/</span></span><br><span class="line"><span class="attribute">font-variant</span>: small-caps;  <span class="comment">/*小写变大写*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>行高</strong></p><p>CSS中，所有的行，都有行高。盒子模型的padding，绝对不是直接作用在文字上的，而是作用在“行”上的。</p><p>垂直方向来看，文字在自己的行里是居中的。比如，文字是14px，行高是24px，那么padding就是5px：</p><p><img src="http://img.smyhvae.com/20170808_2220.png" alt="img"></p><p>为了严格保证字在行里面居中，我们的工程师有一个约定： <strong>行高、字号，一般都是偶数</strong>。这样可以保证，它们的差一定偶数，就能够被2整除。</p><p><strong>如何让单行文本垂直居中</strong></p><p>小技巧：如果一段文本只有一行，如果此时设置<strong>行高 = 盒子高</strong>，就可以保证单行文本垂直居中。这个很好理解。</p><p>上面这个小技巧，只适用于单行文本垂直居中，不适用于多行。如果想让多行文本垂直居中，还需要计算盒子的padding。计算方式如下：</p><p><img src="http://img.smyhvae.com/20170808_2240.png" alt="img"></p><p><strong>vertical-align: middle; 属性</strong></p><p><code>vertical-align</code>属性可用于指定<strong>行内元素</strong>（inline）、<strong>行内块元素</strong>（inline-block）、<strong>表格的单元格</strong>（table-cell）的垂直对齐方式。主要是用于图片、表格、文本的对齐。</p><p>代码举例：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vertical-align</span>: middle; <span class="comment">/*指定行级元素的垂直对齐方式。*/</span></span><br></pre></td></tr></table></figure><p>关于这一点，连 MDN 上都没我讲得详细。MDN上的原话是 “vertical-align 用来指定行内元素（inline）或表格单元格（table-cell）元素的垂直对齐方式。” MDN上的这种描述是不完整的，漏掉了行内块元素（inline-block）。</p><p><strong>字号、行高、字体三大属性</strong></p><p>（1）字号：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-size:14px;</span><br></pre></td></tr></table></figure><p>（2）行高：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">line-height:24px;</span><br></pre></td></tr></table></figure><p>（3）字体：（font-family就是“字体”，family是“家庭”的意思）</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family:&quot;宋体&quot;;</span><br></pre></td></tr></table></figure><p>是否加粗属性以及上面这三个属性，我们可以连写：（是否加粗、字号 font-size、行高 line-height、字体 font-family）</p><p>格式：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font: 加粗 字号/行高/ 字体</span><br></pre></td></tr></table></figure><p>举例：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font: 400 14px/24px &quot;宋体&quot;;</span><br></pre></td></tr></table></figure><p>PS：400是nomal，700是bold。</p><p>上面这几个属性可以连写，但是有一个要求，font属性连写至少要有<strong>字号和字体</strong>，否则连写是不生效的（相当于没有这一行代码）。</p><p><strong>2、字体属性的说明：</strong></p><p>（1）网页中不是所有字体都能用，因为这个字体要看用户的电脑里面装没装，比如你设置：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: &quot;华文彩云&quot;;</span><br></pre></td></tr></table></figure><p>上方代码中，如果用户的 Windows 电脑里面没有这个字体，那么就会变成宋体。</p><p>页面中，中文我们一般使用：微软雅黑、宋体、黑体。英文使用：Arial、Times New Roman。页面中如果需要其他的字体，就需要单独安装字体，或者切图。</p><p>（2）为了防止用户电脑里，没有微软雅黑这个字体。就要用英语的逗号，提供备选字体。如下：（可以备选多个）</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: &quot;微软雅黑&quot;,&quot;宋体&quot;;</span><br></pre></td></tr></table></figure><p>上方代码表示：如果用户电脑里没有安装微软雅黑字体，那么就是宋体。</p><p>（3）我们须将英语字体放在最前面，这样所有的中文，就不能匹配英语字体，就自动的变为后面的中文字体：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: &quot;Times New Roman&quot;,&quot;微软雅黑&quot;,&quot;宋体&quot;;</span><br></pre></td></tr></table></figure><p>上方代码的意思是，英文会采用Times New Roman字体，而中文会采用微软雅黑字体（因为美国人设计的Times New Roman字体并不针对中文，所以中文会采用后面的微软雅黑）。比如说，对于<code>smyhvae哈哈哈</code>这段文字，<code>smyhvae</code>会采用Times New Roman字体，而<code>哈哈哈</code>会采用微软雅黑字体。</p><p>可是，如果我们把中文字体写在前面：(错误写法)</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: &quot;微软雅黑&quot;,&quot;Times New Roman&quot;,&quot;宋体&quot;;</span><br></pre></td></tr></table></figure><p>上方代码会导致，中文和英文都会采用微软雅黑字体。</p><p>（4）所有的中文字体，都有英语别名。</p><p>微软雅黑的英语别名：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: &quot;Microsoft YaHei&quot;;</span><br></pre></td></tr></table></figure><p>宋体的英语别名：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: &quot;SimSun&quot;;</span><br></pre></td></tr></table></figure><p>于是，当我们把字号、行高、字体这三个属性合二为一时，也可以写成：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font:12px/30px  &quot;Times New Roman&quot;,&quot;Microsoft YaHei&quot;,&quot;SimSun&quot;;</span><br></pre></td></tr></table></figure><p>（5）行高可以用百分比，表示字号的百分之多少。</p><p>一般来说，百分比都是大于100%的，因为行高一定要大于字号。</p><p>比如说， <code>font:12px/200% “宋体”</code>等价于<code>font:12px/24px “宋体”</code>。<code>200%</code>可以理解成word里面的2倍行高。</p><p>反过来， <code>font:16px/48px “宋体”;</code>等价于<code>font:16px/300% “宋体”</code>。</p><p><strong>字体加粗属性</strong></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.div</span> &#123;</span><br><span class="line"><span class="attribute">font-weight</span>: normal; <span class="comment">/*正常*/</span></span><br><span class="line"><span class="attribute">font-weight</span>: bold;  <span class="comment">/*加粗*/</span></span><br><span class="line"><span class="attribute">font-weight</span>: <span class="number">100</span>;</span><br><span class="line"><span class="attribute">font-weight</span>: <span class="number">200</span>;</span><br><span class="line"><span class="attribute">font-weight</span>: <span class="number">900</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在设置字体是否加粗时，属性值既可以填写<code>normal</code>、<code>bold</code>这样的加粗字体，也可以直接填写 100至900 这样的数字。<code>normal</code>的值相当于400，<code>bold</code>的值相当于700。</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端基础-HTML篇(一)</title>
       <link href="2023/08/03/qianduan_1/"/>
       <url>2023/08/03/qianduan_1/</url>
