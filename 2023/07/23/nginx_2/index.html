@@ -197,7 +197,7 @@
   const loadValine = async () => {
     if (typeof Valine === 'function') initValine()
     else {
-      await getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      await getScript('https://cdnjs.cloudflare.com/ajax/libs/valine/1.4.16/Valine.min.js')
       initValine()
     }
   }
