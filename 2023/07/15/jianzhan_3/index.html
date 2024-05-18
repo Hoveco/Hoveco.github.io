@@ -200,8 +200,8 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
   const loadWaline = async () => {
     if (initFn) initWaline(initFn)
     else {
-      await getCSS('https://unpkg.com/@waline/client@v2/dist/waline.css')
-      const { init } = await import('https://unpkg.com/@waline/client@v3/dist/waline.js')
+      await getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+      const { init } = await import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js')
       initFn = init || Waline.init
       initWaline(initFn)
       window.walineFn = initFn
@@ -221,7 +221,7 @@ document.body.addEventListener('input', POWERMODE);
 </script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="你,最,美,啦" data-fontsize="17px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
 var pjax = new Pjax({
-  elements: 'a:not([target="_blank"]):not([href="h"]):not([href="t"]):not([href="t"]):not([href="p"]):not([href="s"]):not([href=":"]):not([href="/"]):not([href="/"]):not([href="u"]):not([href="n"]):not([href="p"]):not([href="k"]):not([href="g"]):not([href="."]):not([href="c"]):not([href="o"]):not([href="m"]):not([href="/"]):not([href="@"]):not([href="w"]):not([href="a"]):not([href="l"]):not([href="i"]):not([href="n"]):not([href="e"]):not([href="/"]):not([href="c"]):not([href="l"]):not([href="i"]):not([href="e"]):not([href="n"]):not([href="t"]):not([href="@"]):not([href="v"]):not([href="3"]):not([href="/"]):not([href="d"]):not([href="i"]):not([href="s"]):not([href="t"]):not([href="/"]):not([href="w"]):not([href="a"]):not([href="l"]):not([href="i"]):not([href="n"]):not([href="e"]):not([href="."]):not([href="j"]):not([href="s"]):not([href=" "]):not([href="h"]):not([href="t"]):not([href="t"]):not([href="p"]):not([href="s"]):not([href=":"]):not([href="/"]):not([href="/"]):not([href="u"]):not([href="n"]):not([href="p"]):not([href="k"]):not([href="g"]):not([href="."]):not([href="c"]):not([href="o"]):not([href="m"]):not([href="/"]):not([href="@"]):not([href="w"]):not([href="a"]):not([href="l"]):not([href="i"]):not([href="n"]):not([href="e"]):not([href="/"]):not([href="c"]):not([href="l"]):not([href="i"]):not([href="e"]):not([href="n"]):not([href="t"]):not([href="@"]):not([href="v"]):not([href="2"]):not([href="/"]):not([href="d"]):not([href="i"]):not([href="s"]):not([href="t"]):not([href="/"]):not([href="w"]):not([href="a"]):not([href="l"]):not([href="i"]):not([href="n"]):not([href="e"]):not([href="."]):not([href="c"]):not([href="s"]):not([href="s"])',
+  elements: 'a:not([target="_blank"])',
   selectors: pjaxSelectors,
   cacheBust: false,
   analytics: false,
