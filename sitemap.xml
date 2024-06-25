@@ -810,13 +810,6 @@
   </url>
   
   <url>
-    <loc>https://www.hoveco.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.hoveco.top/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2024-06-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -825,6 +818,13 @@
   
   <url>
     <loc>https://www.hoveco.top/tags/Hexo%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2024-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hoveco.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -889,13 +889,6 @@
   </url>
   
   <url>
-    <loc>https://www.hoveco.top/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.hoveco.top/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2024-06-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -904,6 +897,13 @@
   
   <url>
     <loc>https://www.hoveco.top/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc>
+    <lastmod>2024-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hoveco.top/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
